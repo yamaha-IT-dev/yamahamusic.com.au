@@ -1,0 +1,214 @@
+body {
+	background-attachment:fixed;
+	background-repeat:repeat-x;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	margin: 0px 0px 0px 0px;
+}
+/**********************************************************
+  General link styles
+**********************************************************/
+
+A:link {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:active {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:visited {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:hover {
+	color: #0099FF;
+	text-decoration: underline;
+}
+/**********************************************************
+  General table styles
+**********************************************************/
+table.thin_border {
+	border:solid;
+	border-color:#666;
+	border-width:1px;
+}
+table.gray {
+	background-color:#CCC
+}
+table.contenttable {
+	width:100%;
+}
+table.database_records {
+	border:solid;
+	border-width:1px;
+	border-color:#666;
+	background-color:#CECECE;
+	width:100%;
+}
+.mainnavigation {
+	background-image:url(../images/bg_not_selected_menu.gif);
+	text-align:center;
+}
+.mainnavigation:hover {
+	background-image:url(../images/bg_hover_selected_menu.gif);
+}
+.emptyrownavigation {
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#808080;
+	text-align:right;
+	padding-right:15px;
+}
+.selectednavigation {
+	border-top:1px;
+	border-top-style:solid;
+	border-top-color:#808080;
+	text-align:center;
+	background-color:#FFFFFF;
+}
+/**********************************************************
+  General TR styles
+**********************************************************/
+
+tr.innerdoctitle {
+	background-color:#333;
+	text-align:center;
+	font-weight:bold;
+	color:#FFF;
+	font-size:11px;
+}
+tr.innerdoc {
+	background-color:#FFFFFF;
+	font-size:11px;
+}
+tr.innerdoc:hover {
+	background-color:#e4e4e4;
+}
+tr.updated_today {
+	background-color:#b0b8fe;
+	font-size:11px;
+}
+tr.updated_today:hover {
+	background-color:#99F;
+}
+/**********************************************************
+  General TD styles
+**********************************************************/
+td.database_column {
+	padding-right:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+td.first_content {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+td.header_darkgrey {
+	background-color:#666;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	padding-bottom:4px;
+	padding-top:4px;
+}
+td.header_grey {
+	background-color:#CCC;
+	font-weight:bold;
+}
+td.loginpageheader {
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#808080;
+	padding-top:30px;
+	padding-bottom:40px;
+}
+td.headerblue {
+	border-top:1px;
+	border-top-style:solid;
+	border-top-color:#a8aece;
+	border-right:1px;
+	border-right-style:solid;
+	border-right-color:#a8aece;
+	border-left:1px;
+	border-left-style:solid;
+	border-left-color:#a8aece;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	background-color:#D9E1F8;
+	font-weight:bold;
+}
+td.outercontent {
+	padding-top:17px;
+	border-right:1px;
+	border-right-style:solid;
+	border-right-color:#808080;
+	border-left:1px;
+	border-left-style:solid;
+	border-left-color:#808080;
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#808080;
+	padding-left:10px;
+	padding-right:10px;
+	vertical-align:top;
+	background-color:#FFFFFF;
+}
+td.maincontent {
+	background-color:#D9E1F8;
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#a8aece;
+	border-right:1px;
+	border-right-style:solid;
+	border-right-color:#a8aece;
+	border-left:1px;
+	border-left-style:solid;
+	border-left-color:#a8aece;
+	padding-top:15px;
+	padding-left:15px;
+	padding-bottom:15px;
+	padding-right:15px;
+	vertical-align:top;
+	text-align:left;
+}
+td.outerdoc {
+	background-color:#808080;
+}
+td.list_header {
+	background-color:#E0E0E0;
+}
+td.list_records {
+	text-align:center;
+}
+td.recordspaging {
+	background-color:#CCCCCC;
+	padding-top:10px;
+	padding-bottom:0px;
+	text-align:center;
+}
+td.footer {
+	font-size:12px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+	border-top-color:#999;
+	border-top-width:1px;
+	border-top-style:solid;
+}
+td.formborder {
+	background-color:#a8aece;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+td.displaytextarea {
+	border:solid;
+	border-color:#a8aece;
+	border-width:1px
+}
+.mandatory {
+	color:#FF0000;
+}

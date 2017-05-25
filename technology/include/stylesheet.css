@@ -1,0 +1,41 @@
+.myheadings { /*header of 1st demo*/
+	cursor: hand;
+	cursor: pointer;
+	padding: 2px 5px;
+	border: 1px solid gray;
+	background: #E1E1E1;
+}
+.openpet { /*class added to contents of 1st demo when they are open*/
+	background: #46336b;
+	color: #FFF;
+}
+.technology { /*header of 2nd demo*/
+	cursor: hand;
+	cursor: pointer;
+	font: bold 14px Verdana;
+	margin: 10px 0;
+}
+.openlanguage { /*class added to contents of 2nd demo when they are open*/
+	color: green;
+}
+.closedlanguage { /*class added to contents of 2nd demo when they are closed*/
+	color: red;
+}
+td.compatible {
+	background-image: url(../images/tick.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left:18px;
+	width:33%;
+}
+
+td.incompatible {
+	background-image: url(../images/cross.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left:18px;
+	width:33%;
+}
+
+tr.highlighted_row { background-color:#e4e4e4 }
+tr.header_row { background-color:#333; color:#FFF; }

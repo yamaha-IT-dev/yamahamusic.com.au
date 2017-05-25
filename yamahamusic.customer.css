@@ -1,0 +1,43 @@
+#main {
+	margin : 0 20px 0 100px;
+	max-width : 100%;
+	width : auto;
+}
+
+#main form table {
+	margin : 0 0 10px 0;
+	padding : 0 0 0 0;
+	border-left : 0;
+	border-bottom: 0;
+}
+
+#main form table th {
+	text-align : left;
+	color : #6699CC;
+	padding : 2px 5px;
+	border : 0px;
+}
+
+#main form table td {
+	background-image : none;
+	padding : 2px 5px;
+	margin : 0px;
+	border : 0px;
+}
+
+
+#toolbox {
+	float : right;
+	width : 180px;
+	background-color : #F0EDFB;
+	margin-bottom : 100px;
+	padding : 10px 10px 0 10px;
+}
+
+#toolbox img {
+	float : left;
+}
+
+#right {
+	display : none;
+}

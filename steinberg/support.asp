@@ -1,0 +1,1 @@
+<% response.redirect("http://www.yamahabackstage.com.au/steinberg/support/")%>

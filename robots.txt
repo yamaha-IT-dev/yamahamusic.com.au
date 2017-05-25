@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /src/
+Disallow: /images/resources/
+Disallow: /products/musicproduction/synths/motif-xs/src/
+Disallow: /piano-awards_NEW/
+Disallow: /piano-awards_OLD/

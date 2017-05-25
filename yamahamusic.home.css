@@ -1,0 +1,177 @@
+#container {
+	width: 100%;
+	float: left;
+	margin-right: 0px;
+	background-image : url('images/textures/home/leftNavBG.gif');
+	background-repeat : repeat-y;
+}
+
+#content {
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+#main {
+	margin : 0 0 0 200px;
+	max-width : 100%;
+	width : auto;
+}
+ 
+/* End hide from IE5/mac */
+
+#breadcrumb {
+	border-bottom : 1px #634194 solid;
+}
+
+#leftnav {
+	float : left;
+	margin : 0 0 0 0;
+	color: #333333; 
+	width : 190px;
+	padding : 10px 0 10px 10px;
+	font-size : 0.83em;
+	background-color : #F0EDFB;
+	border-right : 1px #634194 solid;
+}
+
+#leftnav .item {
+	margin : 0 10px 15px 0;
+	padding : 0 0 5px 0;
+	/* border-bottom : 1px #333333 dotted; */
+}
+
+#leftnav .item p {
+	padding : 0 0 0 0;
+	margin : 0 0 0 0;
+}
+
+#leftnav h1 {
+	color : #663399;
+}
+
+#leftnav h3 {
+
+}
+
+#home {
+	margin : 10px 20px 0 10px; 
+	color:#000;
+}
+
+#promoBanners {
+	margin : -5px 0px 0 0px
+}
+
+#promoBanners .item {
+	display : block;
+	background-repeat : no-repeat;
+	background-position : bottom right;
+	border-bottom : 1px #634194 solid;
+	height : 90px;
+	margin : 0 0 0 0;
+	color : #333333;
+	padding : 5px 300px 5px 10px;
+	cursor : pointer;
+}
+
+#promoBanners p {
+	color : #333333;
+}
+
+#promoBanners h1, #promoItems h2, #promoItems p {
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+	line-height : 100%;
+}
+
+#promoBanners a {
+	text-decoration : none;
+}
+
+
+#promoItems {
+	padding : 0px;
+	margin : 0px;
+	border-bottom : 1px #634194 solid;
+}
+
+#promoItems table {
+	width : 99.5%;
+	border : 0px;
+	padding : 0 0 0 0;
+	margin : 0 0 0 0;
+}
+
+#promoItems table tr td {
+	background-repeat : no-repeat;
+	background-position : bottom center;
+	border : 0px;
+	border-left : 1px #634194 solid;
+	height : 100px;
+	width : 33%;
+	color : #333333;
+	margin : 0px;
+	padding : 0px;
+	cursor : pointer;
+}
+
+#promoItems table td.first {
+	border : 0px;
+}
+
+
+.landingOut {
+	border-bottom : 1px #634194 solid;
+	font-size : 0.85em;
+}
+
+.landingOut a {
+	display : block;
+	text-decoration : none;
+	height : 120px;
+}
+
+
+.landingOut h1, .landingOut h2, .landingOut h3 {
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+	text-decoration : none;
+}
+
+.landingIn_brand {
+	height : 142px;
+	/* padding : 10px 10px 10px 10px;
+	background-image : url('images/textures/home/001_AwardWinning.jpg'); */
+	background-repeat : no-repeat;
+	background-position : 0px 0px;	
+	background-color: #FFFFFF;
+	overflow : hidden;
+}
+
+.landingIn_brand object {
+	border : 0;
+	margin : 0;
+	padding : 0;
+}
+
+.landingIn_brand h1, .landingIn_brand h2, .landingIn_brand h3 {
+	color : #FFFFFF;
+}
+
+
+#main .alliances table {
+	border : 0px;
+	color:#000;
+}
+
+#main .alliance {
+	border : 0px;
+	background : none;
+	margin : 0;
+	height : 150px;
+}
+
+#main .alliance p {
+	display : block;
+	width : 140px;
+}

@@ -1,0 +1,108 @@
+html, body, table#pagelayout {
+	height:100%;
+	width:100%;
+	margin:auto;
+}
+body {
+	background-image:url(../images/bg_body.png);
+	background-repeat:repeat-x;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	margin: 0 0 0 0;
+	background-color:#f0f0f0;
+	height:100%;
+}
+/**********************************************************
+  General link styles
+**********************************************************/
+
+A:link {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:active {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:visited {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:hover {
+	color: #0099FF;
+	text-decoration: underline;
+}
+/**********************************************************
+  General table styles
+**********************************************************/
+
+table.main_content_table {
+	width:990px;
+	background-color:#FFF;
+}
+
+table.registration_table {
+	border:solid;
+	border-color:#CCC;
+	border-width:1px;
+}
+
+table.technical {
+	width:600px;
+	line-height:150%;
+}
+
+table.form_box {
+	border: solid;
+	border-color: #CCC;
+	border-width: 1px;
+	width: 100%;
+	font-weight: bold;
+}
+/**********************************************************
+  General TR styles
+**********************************************************/
+
+
+/**********************************************************
+  General TD styles
+**********************************************************/
+td.form_header {
+	background-color: #f0f0f0;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+td.technical_spec_header {
+	background-color:#666;
+	padding-left:8px;
+	color:#FFF;
+}
+td.technical_spec {
+	background-color:#e4e4e4;
+	padding-left:8px;
+	vertical-align:top;
+}
+td.main_header_td {
+	background-image:url(../images/banner_premium_piano.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-left:5px;
+	padding-top:15px;
+	height:200px;
+	vertical-align:top;
+}
+td.footer {
+	font-size:11px;
+	text-align:left;
+	background-color:#bdbdbd;
+	color:#FFF;
+	padding-left:10px;
+}
+/**********************************************************
+  Misc styles
+**********************************************************/
+
+.mandatory {
+	color:#FF0000;
+}

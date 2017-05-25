@@ -1,0 +1,9 @@
+<SCRIPT RUNAT=server LANGUAGE="VBScript">
+
+sub Application_OnStart()
+
+ Session.Timeout = 360
+
+end sub
+
+</SCRIPT>

@@ -1,0 +1,247 @@
+body {
+	background-attachment:fixed;
+	background-repeat:repeat-x;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+/**********************************************************
+  General link styles
+**********************************************************/
+
+A:link {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:active {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:visited {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:hover {
+	color: #0099FF;
+	text-decoration: underline;
+}
+/**********************************************************
+  General table styles
+**********************************************************/
+
+table.contenttable {
+	width:98%;
+}
+.mainnavigation {
+	background-image:url(../images/bg_not_selected_menu.gif);
+	text-align:center;
+}
+.mainnavigation:hover {
+	background-image:url(../images/bg_hover_selected_menu.gif);
+}
+.emptyrownavigation {
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#808080;
+	text-align:right;
+}
+.selectednavigation {
+	border-top:1px;
+	border-top-style:solid;
+	border-top-color:#808080;
+	text-align:center;
+	background-color:#FFFFFF;
+}
+/**********************************************************
+  General TR styles
+**********************************************************/
+
+tr.innerdoctitle {
+	background-color:#CCCCCC;
+	text-align:center;
+	font-weight:bold;
+}
+tr.innerdoc {
+	background-color:#FFFFFF;
+}
+/**********************************************************
+  General TD styles
+**********************************************************/
+
+td.loginpageheader {
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#808080;
+}
+td.headerblue {
+	border-top:1px;
+	border-top-style:solid;
+	border-top-color:#a8aece;
+	border-right:1px;
+	border-right-style:solid;
+	border-right-color:#a8aece;
+	border-left:1px;
+	border-left-style:solid;
+	border-left-color:#a8aece;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	background-color:#D9E1F8;
+	font-weight:bold;
+}
+td.mainheaderblue {
+	border-top:1px;
+	border-top-style:solid;
+	border-top-color:#a8aece;
+	border-right:1px;
+	border-right-style:solid;
+	border-right-color:#a8aece;
+	border-left:1px;
+	border-left-style:solid;
+	border-left-color:#a8aece;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	background-color:#94bbff;
+	font-weight:bold;
+	text-align:center;
+}
+td.outercontent {
+	padding-top:17px;
+	border-right:1px;
+	border-right-style:solid;
+	border-right-color:#808080;
+	border-left:1px;
+	border-left-style:solid;
+	border-left-color:#808080;
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#808080;
+	padding-left:10px;
+	padding-right:10px;
+	vertical-align:top;
+	background-color:#FFFFFF;
+}
+td.maincontent {
+	background-color:#D9E1F8;
+	border-bottom:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#a8aece;
+	border-right:1px;
+	border-right-style:solid;
+	border-right-color:#a8aece;
+	border-left:1px;
+	border-left-style:solid;
+	border-left-color:#a8aece;
+	padding-top:15px;
+	padding-left:15px;
+	padding-bottom:15px;
+	padding-right:15px;
+	vertical-align:top;
+	text-align:left;
+}
+td.outerdoc {
+	background-color:#808080;
+}
+td.list_header {
+	background-color:#E0E0E0;
+}
+td.list_records {
+	text-align:center;
+}
+td.recordspaging {
+	background-color:#CCCCCC;
+	padding-top:10px;
+	padding-bottom:0px;
+	text-align:center;
+}
+td.searchbox {
+	border-color:#CCCCCC;
+	border-style:solid;
+	border-width:1px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+}
+td.footer {
+	font-size:11px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+}
+td.formborder {
+	background-color:#a8aece;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+td.displaytextarea {
+	border:solid;
+	border-color:#a8aece;
+	border-width:1px
+}
+.percentagebar {
+	font-size:9px;
+	padding-left:1px;
+	background-color:#00FF00;
+}
+td.displaypercentagebar {
+	border:solid;
+	border-color:#a8aece;
+	border-width:1px;
+}
+.mandatory {
+	color:#FF0000;
+}
+td.form_header {
+	background-color:#E0E0E0;
+}
+td.form_content {
+	background-color:#efefef;
+	vertical-align:top
+}
+td.form_content_white {
+	background-color:#FFF;
+	vertical-align:top;
+	background-image: url("../images/textures/bgTD.gif");
+	background-position: 0% 100%;
+	background-repeat: repeat-x;
+}
+td.hear_from {
+	padding-left:40px;
+}
+/**********************************************************
+  CA Menu Link Styles
+**********************************************************/
+
+A.CA_menu:link {
+	color: #000;
+	text-decoration: none;
+}
+A.CA_menu:active {
+	color: #000;
+	text-decoration: none;
+}
+A.CA_menu:visited {
+	color: #000;
+	text-decoration: none;
+}
+A.CA_menu:hover {
+	color: #000;
+	text-decoration: none;
+}
+A.CA_menu_header:link {
+	font-size:14px;
+	color: #000;
+	text-decoration: none;
+}
+A.CA_menu_header:active {
+	color: #000;
+	text-decoration: none;
+}
+A.CA_menu_header:visited {
+	color: #000;
+	text-decoration: none;
+}
+A.CA_menu_header:hover {
+	color: #000;
+	text-decoration: none;
+}

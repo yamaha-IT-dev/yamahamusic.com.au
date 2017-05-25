@@ -1,0 +1,11 @@
+
+#leftsupport {
+	float : left;
+	width: 150px;
+	margin : 0 30px 10px 0;
+	color: #333333; 
+}
+
+#leftsupport h1 {
+	color : #663399;
+}

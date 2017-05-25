@@ -1,0 +1,21 @@
+
+#main form table {
+	margin : 0 0 10px 0;
+	padding : 0 0 0 0;
+	border-left : 0;
+	border-bottom: 0;
+}
+
+#main form table th {
+	text-align : left;
+	color : #6699CC;
+	padding : 2px 5px;
+	border : 0px;
+}
+
+#main form table td {
+	background-image : none;
+	padding : 2px 5px 0 0;
+	margin : 0 0 0 0;
+	border : 0px;
+}

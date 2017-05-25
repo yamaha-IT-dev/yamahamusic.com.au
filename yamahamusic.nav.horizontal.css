@@ -1,0 +1,75 @@
+#navigation {
+	background-color : #644196;
+	margin: 0 0 10px 0;
+	height : 24px;
+}
+
+
+#nav, #nav ul {
+	background-color : #644196;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#nav a {
+	display: block; 
+	width: 6em; 
+	/* Hack for IE MAC which needs width \*/ 
+	width: auto; 
+	/* End Hack */ 
+	color: #FFF; 
+	text-decoration: none; 
+	padding: 4px 10px 4px 10px; 
+	/*background: #64776B url(/common/images/gui/nav_arrowRt.gif) no-repeat 7px 50%;*/ 
+	background-color : #644196;
+	border-right: 1px solid #FFF; 
+	border-bottom: 1px solid #FFF; 
+}
+
+#nav a:hover { 
+	color:#FFF; 
+	background: none; 
+	background-color: #663399; 
+} 
+
+#nav ul li a { 
+	/* width: 12em; */
+	border: none; 
+	border-bottom: 1px solid #FFF; 
+}
+
+#nav li {
+	float: left;
+}
+
+#nav li ul {
+	/* width: 12em; */
+	background-color: transparent; 
+	position: absolute;
+	left: -999em;
+}
+
+#nav li ul li {
+	float : left;
+}
+
+#nav li ul li a {
+	font-size : 0.85em;
+	padding: 2px 5px 2px 5px; 
+	border-right: 1px solid #FFF; 
+	border-bottom: 1px solid #FFF; 
+}
+
+#nav li:hover ul {
+	left: 20px;
+}
+
+#nav li:hover ul, #nav li.sfhover ul {
+	left: 20px;
+}
+
+#nav li.hide {
+	display : none;
+}
+

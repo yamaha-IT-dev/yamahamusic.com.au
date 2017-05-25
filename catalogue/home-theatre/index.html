@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Yamaha Home Theatre</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui,maximum-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui,maximum-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../wow_book/wow_book.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/vendor/modernizr-2.7.1.min.js"></script>
+</head>
+<body>
+    <div class="book_container">
+        <div id="book">
+        </div>
+    </div>
+    <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../js/helper.js"></script>
+    <script src="../wow_book/pdf.combined.min.js"></script>
+    <script src="../wow_book/wow_book.min.js"></script>
+    <script>
+        $(function() {
+            var bookOptions = {
+                height: 500,
+                width: 800,
+                maxHeight: 800,
+                centeredWhenClosed: true,
+                toolbar: "lastLeft, left, right, lastRight, zoomin, zoomout, fullscreen, thumbnails, download",
+                thumbnailsPosition: "left",
+                responsiveHandleWidth: 50,
+                container: window,
+                containerPadding: "20px",
+                pdf: "catalogue-home-theatre.pdf"
+            };
+
+            $('#book').wowBook(bookOptions);
+        })
+    </script>
+</body>
+</html>

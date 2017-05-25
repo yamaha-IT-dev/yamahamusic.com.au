@@ -1,0 +1,48 @@
+
+#main #enquiry {
+	float : right;
+	background-color : #F0EDFB;
+	padding : 0 10px 0 15px;
+	margin : -5px 10px 10px 10px;
+	background-image : url('images/textures/bgEnquiry.gif');
+	background-repeat : repeat-x;
+	background-position : bottom left;
+}
+
+#main #enquiry ol {
+	padding : 0 0 5px 20px;
+	margin : 0 0 5px 0;
+}
+
+#main #enquiry ol li a {
+	font-weight : bold;
+	font-family : Arial, Helvetica, Sans-Serif;
+}
+
+#main #enquiry ol li p {
+	font-family : Arial, Helvetica, Sans-Serif;
+	font-weight : normal;
+	margin : 2px 0 0 0;
+}
+
+#outer_wrapper {
+	background-image : url('images/textures/bgEnquiry.gif');
+	background-repeat : repeat-x;
+	background-position : bottom left;
+}
+
+#main #enquiry #next {
+	background-color : #FFF;
+	color : #999;
+	font-family : "Georgia";
+	font-weight : bold;
+	text-transform : uppercase;
+	padding : 5px 10px 5px 15px;
+	margin : 0 -10px 8px -15px;
+	border-bottom : 1px #999 double;
+}
+
+#main #enquiry #next a {
+	text-transform : none;
+	font-size : 1.4em;
+}

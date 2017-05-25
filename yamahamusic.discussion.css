@@ -1,0 +1,34 @@
+#thread {
+	border : 1px #F0EDFB solid;
+}
+
+#thread table {
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+	border-left : 0;
+	border-bottom: 0;
+}
+
+#thread table th {
+	text-align : left;
+	color : #333333;
+	font-weight : normal;
+	background-color : #F0EDFB;
+	padding : 5px 10px 2px 5px;
+	border : 0px;
+}
+
+#thread table td {
+	background-image : none;
+	padding : 5px 10px 15px 10px;
+	margin : 0px;
+	border : 0px;
+}
+
+#discussion {
+	padding : 5px 10px 5px 25px;
+	background-image : url('images/icons/iconThread.gif');
+	background-repeat : no-repeat;
+	background-position : 5px 50%;
+	border-bottom : 1px #F0EDFB solid;
+}

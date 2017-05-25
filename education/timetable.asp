@@ -1,0 +1,1 @@
+<% response.Redirect("http://www.yamahamusicschool.com.au/timetable-and-enrolment") %>

@@ -1,0 +1,1 @@
+<% response.redirect "http://au.yamaha.com/" %>

@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Yamaha Goods Return Authority - New Goods Return</title>
+<link rel="stylesheet" href="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/stylesheet.css" type="text/css">
+<link rel="stylesheet" href="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/pikaday.css" type="text/css">
+<script type="text/javascript" src="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/usableforms.js"></script><style>.accessibility{display: none}</style>
+<script type="text/javascript" src="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/generic_form_validations.js"></script>
+<script language="JavaScript" type="text/javascript">
+function validateTermsConditions(fld) {
+    var error = "";
+ 	if (!fld.checked) {   
+        fld.style.background = 'Yellow'; 
+        error = "- You must accept our Terms and Conditions.\n"
+    } else {
+        fld.style.background = 'White';
+    }
+    return error;  
+}
+
+function validateFormOnSubmit(theForm) {
+	var reason = "";
+	var blnSubmit = true;	
+	
+	reason += validateEmptyField(theForm.txtModelNo,"Model No");
+	reason += validateSpecialCharacters(theForm.txtModelNo,"Model No");
+	reason += validateEmptyField(theForm.txtSerialNo,"Serial No");
+	reason += validateSpecialCharacters(theForm.txtSerialNo,"Serial No");
+	reason += validateEmptyField(theForm.txtInvoiceNo,"Invoice No");
+	reason += validateSpecialCharacters(theForm.txtInvoiceNo,"Invoice No");
+	reason += validateDate(theForm.txtInvoiceDate,"Invoice Date");
+	reason += validateEmptyField(theForm.txtClaimNo,"Claim No");
+	reason += validateSpecialCharacters(theForm.txtClaimNo,"Claim No");
+	reason += validateEmptyField(theForm.cboReason,"Reason");
+	reason += validateEmptyField(theForm.txtFault,"Nature of fault");
+	reason += validateEmptyField(theForm.txtTests,"Tests performed to verify fault");
+	reason += validateEmptyField(theForm.cboAccessories,"Accessories complete");
+	reason += validateEmptyField(theForm.cboPackaging,"Boxes");
+	reason += validateTermsConditions(theForm.chkTermsConditions); 
+
+  	if (reason != "") {
+    	alert("Some fields need correction:\n" + reason);    	
+		blnSubmit = false;
+		return false;
+  	}
+
+	if (blnSubmit == true){
+        theForm.Action.value = 'Add';		
+		return true;
+    }
+}
+</script>
+
+</head>
+<body>
+<table class="main_content_table" align="center" border="0" cellpadding="0" cellspacing="0" height="100%">
+  
+
+<tbody><tr>
+  <td class="main_header_td" align="right"><img src="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/forward_arrow.gif"> <a href="https://www.yamahamusic.com.au/return/default.asp?logout=y">Log out</a></td>
+</tr>
+<tr>
+  <td class="main_header_td_2" align="left"><a href="https://www.yamahamusic.com.au/return/home.asp">Home</a> | <a href="https://www.yamahamusic.com.au/return/add_return.asp">New Return</a> | <a href="https://www.yamahamusic.com.au/return/update_user.asp">Update your details</a> | <a href="https://www.yamahamusic.com.au/return/help.asp">Help</a><small>
+    <div align="right">G'day GURU!</div>
+    </small></td>
+</tr>
+
+  <tr>
+    <td valign="top"><form action="" method="post" name="form_add_return" id="form_add_return" onsubmit="return validateFormOnSubmit(this)">
+        <table border="0" cellpadding="4" cellspacing="0" width="100%">
+          <tbody><tr>
+            <td colspan="3" align="left"><font color="red"></font>
+              <h1 align="center">New Goods Return (step 1 of 2)</h1>              
+              <h3 align="center"><u>1. Fill in the Return details</u></h3>
+              <h3 align="center">2. Upload your receipt</h3></td>
+          </tr>
+          <tr>
+            <td colspan="3"><h3>1. Product details:</h3></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan="2"><table border="0" cellpadding="0" cellspacing="4" width="100%">
+                <tbody><tr>
+                  <td width="20%">Model no<span class="mandatory">*</span>:</td>
+                  <td width="80%"><input name="txtModelNo" id="txtModelNo" maxlength="30" size="35" type="text"></td>
+                </tr>
+                <tr>
+                  <td>Serial no<span class="mandatory">*</span>:</td>
+                  <td><input name="txtSerialNo" id="txtSerialNo" maxlength="30" size="35" type="text"></td>
+                </tr>
+                <tr>
+                  <td>Yamaha invoice no<span class="mandatory">*</span>:</td>
+                  <td><input name="txtInvoiceNo" id="txtInvoiceNo" maxlength="30" size="35" type="text"></td>
+                </tr>
+                <tr>
+                  <td>Invoice date<span class="mandatory">*</span>:</td>
+                  <td><input name="txtInvoiceDate" id="txtInvoiceDate" maxlength="10" size="20" type="text">
+                    <em>DD/MM/YYYY</em></td>
+                </tr>
+                <tr>
+                  <td>Claim no<span class="mandatory">*</span>:</td>
+                  <td><input name="txtClaimNo" id="txtClaimNo" maxlength="30" size="35" type="text"></td>
+                </tr>
+                <tr>
+                  <td>Replacement order no:</td>
+                  <td><input name="txtOrderNo" id="txtOrderNo" maxlength="30" size="35" type="text"></td>
+                </tr>
+              </tbody></table></td>
+          </tr>
+          <tr>
+            <td colspan="3"><h3>2. Reason for return<span class="mandatory">*</span>:
+                <select name="cboReason">
+                  <option selected="selected" value="">...</option>
+                  <option value="1">1. Damaged In Transit / Dead On Arrival (Under 2 weeks old)</option>
+                  <option value="2">2. Faulty - Display Model (Under 2 weeks old)</option>
+                  <option value="3">3. Faulty - Customer Purchase (Under 2 months old)</option>
+                  <option value="4">4. Faulty - 3rd Time (2 verified services by Authorised Yamaha Service Agent and within warranty period)</option>
+                  <option value="5">5. Yamaha Sales Manager Nominates Return</option>
+                </select>
+              </h3></td>
+          </tr>
+          <tr>
+            <td colspan="3">Customer purchased date:
+              <input name="txtDatePurchased" id="txtDatePurchased" maxlength="10" size="20" type="text">
+              <em>DD/MM/YYYY</em></td>
+          </tr>
+          <tr>
+            <td colspan="3"><h3>3. Describe nature of fault<span class="mandatory">*</span>:</h3></td>
+          </tr>
+          <tr>
+            <td width="10%">&nbsp;</td>
+            <td colspan="2" width="90%"><textarea name="txtFault" id="txtFault" cols="90" rows="3" onkeydown="limitText(this.form.txtFault,this.form.countdown,300);" onkeyup="limitText(this.form.txtFault,this.form.countdown,300);"></textarea>
+              <em>Max: 300 characters</em></td>
+          </tr>
+          <tr>
+            <td colspan="3"><h3>4. Describe tests performed to verify fault<span class="mandatory">*</span>:</h3></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan="2"><textarea name="txtTests" id="txtTests" cols="90" rows="3" onkeydown="limitText(this.form.txtTests,this.form.countdown,300);" onkeyup="limitText(this.form.txtTests,this.form.countdown,300);"></textarea>
+              <em>Max: 300 characters</em></td>
+          </tr>
+          <tr>
+            <td colspan="3"><h3>5. Have you ensured that all accessories are complete?<span class="mandatory">*</span>
+                <select name="cboAccessories">
+                  <option selected="selected" value="">...</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </h3></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><em><strong>Please note that missing accessories will be charged as below:</strong></em></td>
+            <td><em><strong>Replacement cost (inc. GST)</strong></em></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>+ Instruction Manual</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>+ Remote Control</td>
+            <td>$27.50</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>+ Cables &amp; Interconnects</td>
+            <td>$5.50</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>+ AM &amp; FM Antenna</td>
+            <td>$5.50</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>+ YPAO / Intellibeam microphone</td>
+            <td>$22.00</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>+ Admin fee</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td colspan="3"><h3>6. Please select one to indicate the following has been checked<span class="mandatory">*</span>:
+                <select name="cboPackaging">
+                  <option selected="selected" value="">...</option>
+                  <option value="1">Original / suitable carton(s)</option>
+                  <option value="2">Original / suitable protective packaging</option>
+                  <option value="3">Once packed ensure cartons are properly sealed</option>
+                </select>
+              </h3></td>
+          </tr>
+          <tr>
+            <td colspan="3" bgcolor="#CCCCCC"><input name="chkTermsConditions" id="chkTermsConditions" type="checkbox">
+              I am authorised to act on behalf on the store named on this form and I have read the <a href="https://www.yamahamusic.com.au/return/terms-conditions.asp" target="_blank">Terms &amp; Conditions</a>.</td>
+          </tr>
+          <tr>
+            <td colspan="3"><p align="center">
+                <input name="Action" type="hidden">
+                <input value="Submit" type="submit">
+                <input value="Reset" type="reset">
+              </p>
+              <p><img src="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/backward_arrow.gif" border="0" height="12" width="6"> <a href="https://www.yamahamusic.com.au/return/home.asp">Back to Home</a></p></td>
+          </tr>
+        </tbody></table>
+      </form></td>
+  </tr>
+</tbody></table>
+<script type="text/javascript" src="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/moment.js"></script> 
+<script type="text/javascript" src="Yamaha%20Goods%20Return%20Authority%20-%20New%20Goods%20Return_files/pikaday.js"></script> 
+<script type="text/javascript">	
+	var picker = new Pikaday(
+    {
+        field: document.getElementById('txtInvoiceDate'),
+        firstDay: 1,
+        minDate: new Date('2010-01-01'),
+        maxDate: new Date('2015-12-31'),
+        yearRange: [2010,2015],
+		format: 'DD/MM/YYYY'
+    });
+	
+	var picker = new Pikaday(
+    {
+        field: document.getElementById('txtDatePurchased'),
+        firstDay: 1,
+        minDate: new Date('2010-01-01'),
+        maxDate: new Date('2015-12-31'),
+        yearRange: [2010,2015],
+		format: 'DD/MM/YYYY'
+    });
+</script><div style="" class="pika-single is-hidden is-bound"></div><div style="" class="pika-single is-hidden is-bound"></div>
+
+</body></html>

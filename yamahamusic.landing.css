@@ -1,0 +1,322 @@
+#container {
+	width: 100%;
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+}
+
+#content {
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+	max-width : none;
+	width : 100%;
+	border : 1px red solid;
+}
+
+#right {
+	display : none;
+}
+
+#left {
+	display : none;
+}
+
+#main {
+	margin : -5px 0 0 0;
+	max-width : none;
+	width : 100%;
+}
+
+#main .column {
+	float : left;
+	width : 200px;
+	margin : 20px 0 0 10px;
+}
+
+#main .row {
+	width : 540px;
+	margin : 20px 0 0 100px;
+}
+
+#breadcrumb {
+	border-bottom : 1px #634194 solid;
+}
+
+
+#productnav {
+	margin : 20px 0 40px 10px;
+}
+
+#productnav ul {
+	padding : 0 0 0 0px;
+	margin : 0 0 20px 0;
+}
+
+#productnav ul li {
+	float : left;
+	list-style : none;
+	margin : 0 20px 0 0;
+	font-size : 1.2em;
+}
+
+#productnav ul li a, #productnav ul li a:visited, #productnav ul li a:link, #productnav ul li a:active {
+	text-decoration : none;
+	color : #6699CC;
+}
+
+#productnav ul li a:hover {
+	color : #6633CC;
+}
+
+
+
+.landingOut {
+	border-bottom : 1px #634194 solid;
+}
+
+.landingOutNoBorder {
+	border-bottom : 0px;
+}
+
+.landingOut a {
+	display : block;
+	text-decoration : none;
+	height : 120px;
+}
+
+
+.landingOut h1, .landingOut h2, .landingOut h3 {
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+	text-decoration : none;
+}
+
+.landingIn_ysp {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	background-image:url('products/images/landing/landingBannerYSP800.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-color:#190B31;
+}
+
+
+.landingIn_rxv4600 {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align:right;
+	background-image:url('products/images/landing/rxv4600b.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-color:#000;
+}
+
+.landingIn_Bike {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align:right;
+	background-image:url('products/images/landing/avitPromo.gif');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-color:#FFF;
+}
+
+.landingIn_motifrack {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align:right;
+	background-image:url('products/images/landing/motifrackes.gif');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color:#5F6C95;
+}
+
+.landingIn_motifrack h1, .landingIn_motifrack h2, .landingIn_motifrack h3 {
+	color : #99CCFF
+}
+
+.landingIn_motifrack h1 {
+	margin-top : 60px;
+}
+
+.landingIn_aw1600 {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	background-image:url('products/images/landing/aw1600.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-color:#333;
+}
+
+.landingIn_stagePAS h1, .landingIn_stagePAS h2, .landingIn_stagePAS h3 {
+	color : #FFF;
+}
+
+.landingIn_stagePAS {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align:left;
+	background-image:url('products/images/landing/landingStagePAS500.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-color:#000;
+}
+
+.landingIn_EMX {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align:left;
+	background-image:url('products/images/landing/EMXSmartLiveSound.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-color:#FFFFFF;
+}
+
+
+.landingIn_EMX h1, .landingIn_EMX h2, .landingIn_EMX h3 {
+	color : #333333;
+}
+
+.landingIn_01V96 {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	background-image:url('products/images/landing/01V96.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-color:#24546B;
+}
+
+
+
+.landingIn_01V96 h1, .landingIn_01V96 h2, .landingIn_01V96 h3 {
+	color : #E3E4E8;
+}
+
+
+.landingIn_navarro {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align : right;
+	background-image:url('products/images/landing/DaveNavarro.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-color:#1E1C1F;
+}
+
+.landingIn_navarro h1, .landingIn_navarro h2, .landingIn_navarro h3 {
+	color : #FFF;
+}
+
+.landingIn_jamesM {
+	height : 102px;
+	padding-top:10px; 
+	padding-left:10px;
+	background-image:url('products/images/landing/banner_clavinova.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-color:#000000;
+}
+
+.landingIn_jamesM h1, .landingIn_jamesM h2, .landingIn_jamesM h3 {
+	color : #FFF;
+}
+
+.landingIn_johnF {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align : right;
+	background-image:url('products/images/landing/johnForemanCVP309.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-color:#000000;
+}
+
+.landingIn_CommAudio {
+	height : 120px;
+	padding : 10px 10px 10px 224px;
+	text-align:left;
+	background-image:url('products/images/landing/landingM7CL.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-color:#E6E9EE;
+}
+
+.landingIn_CommAudio h1, .landingIn_CommAudio h2, .landingIn_CommAudio h3 {
+	width : 430px;
+	padding : 3px 3px 3px 3px;
+	margin : 23px 0 0 0;
+	background-color : #E6E9EE;
+	color: #FFF;
+}
+
+
+.landingIn_CommAudio2 {
+	height : 120px;
+	padding : 10px 10px 10px 224px;
+	text-align:left;
+	background-image:url('products/images/landing/landingCAWorkshopTour_Nov07.jpg');
+	background-position:top left;
+	background-color:#FFF;
+}
+
+.landingIn_CommAudio h1, .landingIn_CommAudio h2, .landingIn_CommAudio h3 {
+	width : 430px;
+	padding : 3px 3px 3px 3px;
+	margin : 23px 0 0 0;
+	background-color : #E6E9EE;
+	color: #FFF;
+}
+
+
+.landingIn_EduTop {
+	height : 139px;
+	padding : 10px 10px 10px 10px;
+	text-align:left;
+	background-image:url('education/images/landingBannerTop.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color:#0099CF;
+}
+
+.landingIn_EduBottom {
+	height : 109px;
+	padding : 10px 10px 10px 10px;
+	text-align:left;
+	background-image:url('education/images/landingBannerBottom.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color:#FFE153;
+}
+
+
+.landingIn_mw {
+	height : 120px;
+	padding : 10px 10px 10px 10px;
+	text-align:left;
+	background-image:url('products/images/landing/landingBannerMW.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color:#000;
+}
+
+.landingIn_motifrack h1, .landingIn_motifrack h2, .landingIn_motifrack h3 {
+
+}
+
+.landingIn_motifrack h1 {
+
+}
+
+
+.landingIn_Warranty {
+	height : 49px;
+	padding : 10px 10px 10px 10px;
+	text-align:right;
+	background-image:url('products/images/landing/landingBannerProAudioWarranty.jpg');
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-color:#FFF;
+}
+
+.landingIn_Warranty a {
+	height : 40px;
+}

@@ -1,0 +1,65 @@
+html, body, table#pagelayout {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+body {
+	/*background-image: url(../images/bg_body.png);
+	background-repeat: repeat-x;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin:20px 20px 20px 20px;
+	height: 100%;
+}
+h3 {
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+/**********************************************************
+  General link styles
+**********************************************************/
+
+A:link {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:active {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:visited {
+	color: #0031e6;
+	text-decoration: underline;
+}
+A:hover {
+	color: #0099FF;
+	text-decoration: underline;
+}
+/**********************************************************
+  General table styles
+**********************************************************/
+
+table.main_form_table {
+	width: 800px;
+	border: solid;
+	border-width: 1px;
+	border-color: #CCC;
+	background-color: #f0f0f0;
+}
+
+/**********************************************************
+  General TR styles
+**********************************************************/
+
+/**********************************************************
+  General TD styles
+**********************************************************/
+
+
+.float_right {
+	float: right;
+}
+.float_left {
+	float: left;
+	width:20%;
+}

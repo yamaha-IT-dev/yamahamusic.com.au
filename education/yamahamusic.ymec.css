@@ -1,0 +1,43 @@
+#container {
+	margin : 10px 0 0 0;
+}
+
+#left {
+	margin : 0 0 0 0;
+}
+
+#banner {
+	height : 79px;
+	background-image : url('images/pageBannerBG.gif');
+	background-repeat : repeat-x;
+	background-position : bottom left;
+	padding : 0 0 0 0;
+	margin : 0 0 0 200px;
+}
+
+#banner.home {
+	height : 167px;
+}
+
+#banner img {
+	padding : 0 0 0 0;
+	margin : 0 0 0 0;
+}
+
+#main {
+	width : 400px;
+	padding : 0 300px 0 0;
+}
+
+#right {
+	margin : 30px -300px 0 0;
+}
+
+* html #right {
+	margin : 30px -150px 0 0;
+}
+
+
+#right img {
+	float : none;
+}

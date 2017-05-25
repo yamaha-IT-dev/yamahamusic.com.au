@@ -1,0 +1,61 @@
+#outer_wrapper {
+
+}
+
+#main {
+	padding-left : 60px;
+	width : auto;
+	color : #333333;
+	background-color : #C0BBD8;
+	background-image : url('images/compBG2.jpg');
+	background-repeat : repeat-x;
+}
+
+#main h1, #main h2, #main h3 {
+	color : #1F007E;
+}
+
+input {
+	background-image : none;
+	background-color : #FFFFFF;
+	font-family : Arial, Helvetica, Sans-Serif;
+	color : #333333;
+	padding : 1px 4px 1px 4px;
+	margin : 0 0 0 0;
+	border : 1px #333 solid;
+	font-size : 1.0em;
+}
+
+select {
+	border : 1px #333 solid;
+	background-image : none;
+	background-color : #FFFFFF;
+	margin : 0 0 0 0;
+	font-family : Arial, Helvetica, Sans-Serif;
+	color : #333333;
+	font-size : 1.0em;
+}
+
+textarea {
+	background-image : none;
+	background-color : #FFFFFF;
+	font-family : Arial, Helvetica, Sans-Serif;
+	font-size : 1em;
+	margin : 0 0 0 0;
+	border : 1px #333 solid;
+	padding : 2px 2px 2px 2px;
+	color : #333333;
+}
+
+.required {
+	border-bottom : 1px red solid;
+}
+
+sup {
+	font-size : 0.8em;
+	line-height : 0.5em;
+}
+
+label {
+	font-weight : bold;
+}

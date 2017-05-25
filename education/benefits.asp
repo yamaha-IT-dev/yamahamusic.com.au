@@ -1,0 +1,1 @@
+<% response.Redirect("http://www.yamahamusic.com.au/school") %>
