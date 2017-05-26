@@ -1,0 +1,1 @@
+<p align="center" style="font-size:11px; color:#FFF;">&copy; 2014 - <a href="http://au.yamaha.com/" class="footer">Yamaha Music Australia</a> - <a href="contact.asp" class="footer">Contact Us</a></p>
