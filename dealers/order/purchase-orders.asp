@@ -70,7 +70,9 @@ sub displayOrder
 			strDisplayList = strDisplayList & "<td>" & rs("purID") & "</td>"
 			strDisplayList = strDisplayList & "<td>" & FormatDateTime(rs("purDateCreated"),1) & "</td>"
 			strDisplayList = strDisplayList & "<td>" & rs("purModelNo") & "</td>"
+			<!--
 			strDisplayList = strDisplayList & "<td>" & FormatNumber(rs("purPrice")) & "</td>"
+			-->
 			strDisplayList = strDisplayList & "<td>" & rs("purQty") & "</td>"
 			strDisplayList = strDisplayList & "<td>" & rs("purOrderNo") & "</td>"
 			strDisplayList = strDisplayList & "<td>" & FormatNumber(rs("purTotal")) & "</td>"				
@@ -133,8 +135,10 @@ dim rs, intPageCount, intRecord, strDisplayList
             <td>PO ID</td>
             <td>Date Requested</td>
             <td>Model No</td>
-            <td>Wholesale ex GST</td>
-            <td>Qty</td>
+            <!--
+			<td>Wholesale ex GST</td>
+            -->
+			<td>Qty</td>
             <td>Purchase Order No</td>
             <td>Total inc GST</td>
             <td>Status</td>

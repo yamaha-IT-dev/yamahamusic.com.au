@@ -174,7 +174,9 @@ sub displayStock
 				end if
 			end if
 			strDisplayList = strDisplayList & "</td>"
-			strDisplayList = strDisplayList & "<td>" & FormatNumber(rs("stock_wholesale")) & "</td>"
+			
+			'strDisplayList = strDisplayList & "<td>" & FormatNumber(rs("stock_wholesale")) & "</td>"
+			
 			strDisplayList = strDisplayList & "<td><input type=""text"" class=""form-control"" id=""txtQty"" name=""txtQty"" placeholder=""Qty"" maxlength=""3"" size=""2"" required></td>"			
 			strDisplayList = strDisplayList & "<td><input type=""text"" class=""form-control"" id=""txtOrderNo"" name=""txtOrderNo"" placeholder=""Purchase Order No"" maxlength=""20"" size=""20"" required></td>"
 			strDisplayList = strDisplayList & "<td>"
@@ -296,8 +298,10 @@ dim rs, intPageCount, intpage, intRecord, strDisplayList, strMessageText
             <td>Description</td>
             <td>RRP inc GST</td>
             <td>Availability</td>
-            <td>Wholesale ex GST</td>
-            <td>Qty</td>
+<!--       
+	   <td>Wholesale ex GST</td>
+-->
+			<td>Qty</td>
             <td>Purchase Order No</td>
             <td></td>
           </tr>
