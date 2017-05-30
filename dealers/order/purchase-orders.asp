@@ -67,12 +67,13 @@ sub displayOrder
 			else
 				strDisplayList = strDisplayList & "<tr class=""innerdoc_2"">"
 			end if
+			
 			strDisplayList = strDisplayList & "<td>" & rs("purID") & "</td>"
 			strDisplayList = strDisplayList & "<td>" & FormatDateTime(rs("purDateCreated"),1) & "</td>"
 			strDisplayList = strDisplayList & "<td>" & rs("purModelNo") & "</td>"
-			<!--
-			strDisplayList = strDisplayList & "<td>" & FormatNumber(rs("purPrice")) & "</td>"
-			-->
+			
+			'strDisplayList = strDisplayList & "<td>" & FormatNumber(rs("purPrice")) & "</td>"
+			
 			strDisplayList = strDisplayList & "<td>" & rs("purQty") & "</td>"
 			strDisplayList = strDisplayList & "<td>" & rs("purOrderNo") & "</td>"
 			strDisplayList = strDisplayList & "<td>" & FormatNumber(rs("purTotal")) & "</td>"				
