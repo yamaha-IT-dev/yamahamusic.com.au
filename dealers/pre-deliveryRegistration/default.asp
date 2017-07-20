@@ -1,3 +1,4 @@
+
 <!--#include file="../../include/connection.asp" -->
 <!--#include file="class/clsPreDeliveryReg.asp" -->
 <!--#include file="class/clsDealer.asp" -->
@@ -6,16 +7,16 @@
 sub main
 	
 	if Request.ServerVariables("REQUEST_METHOD") = "POST" then
-		response.write "TEST "			
-		if Trim(Request("Action")) = "Register" then
-		response.write "TEST 2"			
+		'response.write "TEST "			
+'		if Trim(Request("Action")) = "Register" then
+	
 			if Trim(Session("user_token")) = Trim(Request.Form("UserToken")) then
-				response.write "SUBMITTING"			
+	
 				call addDealerPreDeliveryReg
 			else
-				response.write  Trim(Session("user_token")) & " AND " & Trim(Request.Form("UserToken")) 
+				
 			end if	
-		end if
+'		end if
 	else
 		call getDealerList
 		call getYASAList
@@ -30,22 +31,13 @@ call main
 <!doctype html>
 <html>
 <head>
-<!--
-<link rel="stylesheet" href="css/pikaday.css">
-<link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery.js"></script>
-<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<script src="../bootstrap/js/bootstrap.js"></script>
-
--->
+<!-- E5 - First version -->
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="../include/stylesheet.css">
 <script src="//code.jquery.com/jquery.js"></script>
-<script src="../bootstrap/js/bootstrap.js"></script>
-<script src="../include/generic_form_validations.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script src="../../include/generic_form_validations.js"></script>
 <script>
 
 
@@ -63,9 +55,6 @@ function validateFormOnSubmit(theForm) {
 	reason += validateSpecialCharacters(theForm.txtPreDeliveryCertNo,"Pre Delivery Cert No");
 	
 	reason += validateEmptyField(theForm.cboYASANo,"YASA Name");
-	
-	
-	reason += validateCheckBox(theForm.chkTermsConditions,"Terms and Conditions");
 	
   	if (reason != "") {
     	alert("Some fields need correction:\n" + reason);    	
@@ -107,7 +96,7 @@ function validateFormOnSubmit(theForm) {
   <tr>
 	<td>
 		<div class="container">
-		  <p><img src="../images/logoYamaha.jpg" /></p>
+		  <p><img src="../../images/new_yamaha_logo.png" /></p>
 		  <h1 class="page-header">Piano Dealer Pre-Delivery Registration</h1>
 		  <form method="post" role="form" onsubmit="return validateFormOnSubmit(this)">
 				<div class="form-group">
@@ -119,13 +108,13 @@ function validateFormOnSubmit(theForm) {
 			   <div class="new_line">
 				   <div class="form-group">
 						<label for="txtModelNo">Piano Model Number<span class="mandatory">*</span>:</label>
-						<input type="text" class="form-control" value="1111123"  id="txtModelNo" name="txtModelNo" placeholder="Piano ModelNo" maxlength="80" size="60" pattern=".{4,}" title="4 characters minimum" required>
+						<input type="text" class="form-control"  id="txtModelNo" name="txtModelNo" placeholder="Piano ModelNo" maxlength="80" size="60" pattern=".{4,}" title="4 characters minimum" required>
 				   </div>
 			   </div>
 			   <div class="new_line">
 				   <div class="form-group">
 						<label for="txtSerialNo">Serial No<span class="mandatory">*</span>:</label>
-						<input type="text" class="form-control" id="txtSerialNo" name="txtSerialNo" placeholder="Serial No" maxlength="9" value="1111123" size="12" pattern=".{6,}" title="6 digit minimum" required>
+						<input type="text" class="form-control" id="txtSerialNo" name="txtSerialNo" placeholder="Serial No" maxlength="9" size="12" pattern=".{6,}" title="6 digit minimum" required>
 						<em>The serial no is on the right hand side of the piano under the music rest, stamped into the iron frame. It is 7-digit long.<br>
 						Otherwise it is written on the warranty booklet. <a href="images/img_serial-num-location.jpg" target="_blank">(How to find your serial no)</a></em>
 					</div>
@@ -134,8 +123,9 @@ function validateFormOnSubmit(theForm) {
 			   
 				<div class="new_line">
 				  <div class="form-group">
-					<label for="txtSerialNo">Pre-Delivery certificate number<span class="mandatory">*</span>:</label>        
-					<input type="text" class="form-control" value="1111123"  id="txtPreDeliveryCertNo" name="txtPreDeliveryCertNo" placeholder="Pre-Delivery certificate number" maxlength="6" size="15" pattern=".{6,}" title="6 digit minimum" required>
+					<label for="txtSerialNo">Pre-Delivery certificate number:</label>        
+					<input type="text" class="form-control" id="txtPreDeliveryCertNo" name="txtPreDeliveryCertNo" placeholder="Pre-Delivery certificate number" maxlength="6" size="15" pattern=".{6,}" title="6 digit minimum" required>
+					<em>required for purchases made from July 15th 2017</em>
 				  </div>
 				</div>
 				<div class="new_line">
@@ -148,13 +138,8 @@ function validateFormOnSubmit(theForm) {
 			   </div>
 				  
 				
-				<div class="new_line">
-				     <div class="form-group">
-						<label for="chkTermsConditions">
-						<input type="checkbox" name="chkTermsConditions" id="chkTermsConditions" /> I have read &amp; understood the <a href="terms-conditions.html" target="_blank">Terms &amp; Conditions</a></label>
-						<input type="hidden" name="Action" />        
-						
-					</div>
+				<div style="padding-bottom:50px">
+				     
 					<input type="submit" name="submit" id="submit" value="Register" />
 			    </div>
 				

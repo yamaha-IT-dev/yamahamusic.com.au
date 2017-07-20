@@ -29,6 +29,7 @@ Response.CacheControl = "no-cache"
 <script src="//code.jquery.com/jquery-1.9.1.js"></script>
 <script src="../include/generic_form_validations.js"></script>
 <script src="include/autoSum.js"></script>
+<script src="/loadModelNo.js" type="text/javascript"></script>
 <script>
 function validateUpdateJobForm(theForm) {
     var reason = "";

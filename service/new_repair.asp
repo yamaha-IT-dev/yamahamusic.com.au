@@ -29,21 +29,9 @@ Response.CacheControl = "no-cache"
 <script src="//code.jquery.com/jquery-1.9.1.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script src="../include/generic_form_validations.js"></script>
-<script>
-$(function() {
-    var availableTags;
 
-    $.get("../productsAll.txt", function(data, status) {
-        if ("success" == status) {
-            availableTags = data.split(",")
-        };
+<script src="/loadModelNo.js" type="text/javascript"></script>
 
-        $("#txtModelNo").autocomplete({
-            source: availableTags
-        });
-    });
-});
-</script>
 <script>
 function validateTermsConditions(fld) {
     var error = "";

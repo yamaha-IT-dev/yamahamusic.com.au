@@ -53,7 +53,12 @@ call main
         <div class="pure-u-1-5"><a href="../return/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('return','','../icons/icon_return_roll.jpg',0)"><img src="../icons/icon_return.jpg" border="0" id="return" name="return" /></a></div>
         <div class="pure-u-1-5"><a href="../product/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('product','','../icons/icon_product_roll.jpg',0)"><img src="../icons/icon_product.jpg" border="0" id="product" name="product" /></a></div>
         <div class="pure-u-1-5"><a href="../contact/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contact','','../icons/icon_contact_roll.jpg',0)"><img src="../icons/icon_contact.jpg" border="0" id="contact" name="contact" /></a></div>
-        <div class="pure-u-1-5"><a href="../profile/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('profile','','../icons/icon_profile_roll.jpg',0)"><img src="../icons/icon_profile.jpg" border="0" id="profile" name="profile" /></a></div>
+        
+		<!-- E5
+		<div class="pure-u-1-5"><a href="../profile/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('profile','','../icons/icon_profile_roll.jpg',0)"><img src="../icons/icon_profile.jpg" border="0" id="profile" name="profile" /></a></div>
+		-->
+		<!-- E5 -->
+		<div class="pure-u-1-5"><a href="../pre-deliveryRegistration/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('preDeliveryReg','','../icons/icon_preDeliveryReg_roll.png',0)"><img src="../icons/icon_preDeliveryReg.png" border="0" id="preDeliveryReg" name="preDeliveryReg" /></a></div>
      </div></td>
   </tr>    
 </table>

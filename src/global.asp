@@ -87,7 +87,7 @@ var GBL_USERTYPE_SERVICE = 6
 
 
 var GBL_PRIVACY_STATEMENT = new String("\n\nIf you do not wish to receive further updates from Yamaha Music Australia, or you would like to gain access to the information about you that we hold, please contact our Privacy Officer at one of the reference points below. If you would like us to stop sending updates to you, please allow two weeks for your request to be actioned.\n" +
-							"a: Level 1, 99 Queensbridge Street Southbank, Victoria 3006\n" +
+							"a: Level 1, 80 Market Street, South Melbourne VIC 3205\n" +
 							"e: privacy_au@gmx.yamaha.com\n" +
 							"p: +61 3 9693 5111\n" +
 							"f: +61 3 9699 2332\n");

@@ -23,6 +23,8 @@ function addPremiumCustomer
 	session("serial_no")	= Replace(Trim(Request.Form("txtSerialNo")),"'","''")
 	session("dealer_id")	= Trim(Request.Form("cboDealer"))
 	session("comments")		= Replace(Trim(Request.Form("txtComments")),"'","''")
+	'E5
+	session("pre_delivery_RegCertNo")	= Replace(Trim(Request.Form("txtPreDelRegCertNo")),"'","''")
 	
 	if Trim(Request.Form("chkCashBack")) = "" then
 		session("cashback")		= 0
@@ -60,8 +62,14 @@ function addPremiumCustomer
 	cmdObj.Parameters.Append paraObj	
 	Set paraObj = cmdObj.CreateParameter("@cashback",AdInteger,AdParamInput,2, session("cashback"))
 	cmdObj.Parameters.Append paraObj	
+	
+	'E5
+	Set paraObj = cmdObj.CreateParameter("@preDelRegCertNo",AdVarChar,AdParamInput,7, session("pre_delivery_RegCertNo"))
+	cmdObj.Parameters.Append paraObj	
+		
 	Set paraObj = cmdObj.CreateParameter("new_id",AdInteger,adParamInputOutput,4,0)
 	cmdObj.Parameters.Append paraObj
+	
 	
     On Error Resume Next
         Dim rs

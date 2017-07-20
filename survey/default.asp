@@ -9,18 +9,13 @@
 <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
 <script src="../../include/generic_form_validations.js"></script>
+
+<script src="/loadModelNo.js" type="text/javascript"></script>
+
 <script>
 $(function() {
     var availableTags;
 
-    $.get("../productsAll.txt", function(data, status) {
-        if ("success" == status) {
-            availableTags = data.split(",")
-        };
-        $("#txtModelNo").autocomplete({
-            source: availableTags
-        });
-    });
 
 
     $.get("getServiceCentres.asp", function(data, status) {

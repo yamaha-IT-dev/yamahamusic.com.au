@@ -38,7 +38,7 @@ Function CheckForSQLError(connObj,strSQLType,strMessageText)
 
 function addDealerPreDeliveryReg()
 	Dim cmdObj, paraObj, strMessageText
-response.write "xxxxx start......"
+
     call OpenDataBase
 
     Set cmdObj = Server.CreateObject("ADODB.Command")
@@ -60,7 +60,7 @@ response.write "xxxxx start......"
 	call createAndAddParameter(cmdObj,"@preDeli_cert_no","PreDeliveryCertNo",12,false)	
 	call createAndAddParameter(cmdObj,"@yasa_no","Yasa_no",3,true)
 	
-	response.write "start......"
+	
 
     On Error Resume Next
         Dim rs

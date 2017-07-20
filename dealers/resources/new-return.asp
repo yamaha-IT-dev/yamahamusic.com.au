@@ -31,23 +31,11 @@ Response.CacheControl = "no-cache"
 <script src="../../bootstrap/js/bootstrap.js"></script>
 <script src="../../include/usableforms.js"></script>
 <script src="../../include/generic_form_validations.js"></script>
-<script>
-$(function() {
-    var availableTags;
 
-    $.get("getProducts.asp", function(data, status) {
-        if ("success" == status) {
-            availableTags = data.split(",")
-        };
-        $("#txtModelNo").autocomplete({
-            source: availableTags
-        });
-    });
+<script src="/loadModelNo.js" type="text/javascript"></script>
 
-
-});
-</script>
 <script language="JavaScript" type="text/javascript">
+
 function validateTermsConditions(fld) {
     var error = "";
  	if (!fld.checked) {   

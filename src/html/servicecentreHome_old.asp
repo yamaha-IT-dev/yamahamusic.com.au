@@ -53,8 +53,8 @@
           <h1>Technical Support</h1>          
           <p>Yamaha Technical Support for MPD is located at Southbank as part of our head office building at the address below:</p>
           <p><strong>Yamaha Music Australia Pty Ltd<br />
-            Level 1/ 99 Queensbridge St<br />
-            Southbank VIC 3006</strong></p>
+            Level 1, 80 Market Street<br />
+             South Melbourne VIC 3205</strong></p>
           <p>Yamaha Technical Support for AVIT is located at Excel Technology Hallam:<br />
             Toll Free: <strong>1300 739 390</strong></p>
           <p>As Yamaha regularly distributes service bulletins/service manuals on the YSISS internet site, please refer to these first, prior to contacting our technical staff. </p>

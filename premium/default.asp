@@ -80,6 +80,10 @@ function validateFormOnSubmit(theForm) {
 	
 	reason += validateEmptyField(theForm.cboDealer,"Dealer");
 	
+	// E5
+	//reason += validateEmptyField(theForm.txtPreDelRegCertNo,"Pre Delivery RegCertNo");
+	
+	
 	reason += validateCheckBox(theForm.chkTermsConditions,"Terms and Conditions");
 	
   	if (reason != "") {
@@ -107,7 +111,7 @@ function validateFormOnSubmit(theForm) {
 </head>
 <body>
 <div class="container">
-  <p><img src="images/logo_yamaha.jpg" /></p>
+  <p><img src="../images/new_yamaha_logo.png" /></p>
   <h1 class="page-header">Premium Piano Care Registration</h1>
   <form method="post" role="form" onsubmit="return validateFormOnSubmit(this)">
     <div class="float_left">
@@ -188,6 +192,15 @@ function validateFormOnSubmit(theForm) {
         <em>The serial no is on the right hand side of the piano under the music rest, stamped into the iron frame. It is 7-digit long.<br>
         Otherwise it is written on the warranty booklet. <a href="images/img_serial-num-location.jpg" target="_blank">(How to find your serial no)</a></em>
       </div>
+	  
+	  <!-- E5 -->
+	   <div class="form-group">
+        <label for="txtPreDelRegCertNo">Pre-Delivery Certificate number:</label>
+        <input type="text" class="form-control" id="txtPreDelRegCertNo" name="txtPreDelRegCertNo" placeholder="Pre-Delivery Certificate number" maxlength="7" size="12" pattern=".{7,}" title="6 digit minimum" required>
+        <em>required for purchases made from July 15th 2017</em>
+      </div>
+	  
+	  
       <div class="form-group">
         <label for="cboDealer">Dealer<span class="mandatory">*</span>:</label>
         <select id="cboDealer" name="cboDealer" class="form-control">
